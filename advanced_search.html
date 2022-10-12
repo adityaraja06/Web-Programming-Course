@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            .NavBar{
+                height: 40px;
+                margin-left: 32px;
+                margin-right: 32px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
+            .NavLink{
+                padding-left: 24px;
+                padding-right: 24px;
+                font-size: 12px;
+                font-family:Arial, sans-serif
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            .SearchSection{
+                margin-left: 32px;
+                margin-right: 32px;
+                height:100vh;
+                display: flex;
+                justify-content:flex-start;
+                align-items:flex-start;
+                flex-direction: column;
+            }
+            .TextField{
+                width: 527px;
+                height: 40px;
+                border: 0.8px solid black;
+                border-radius: 0px;
+                padding-left: 24px;
+                border-color: lightgray;
+            }
+            .Button{
+                padding-right: 24px;
+                padding-left: 24px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                font-family: Arial;
+                color: white;
+                font-size: 12px;
+                background-color: rgb(53, 122, 232);
+                border-radius: 4px;
+                box-shadow: none;
+                box-shadow: 0px;
+            }
+            .ButtonContainer{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .OuterButtonContainer{
+                display: flex;
+                flex-direction: row;
+                margin-top: 24px;
+                justify-content: flex-start;
+            }
+            .Title{
+                font-size: 20px;
+                font-family: Arial, sans-serif;
+                margin-left: 32px;
+                color:rgb(217, 48, 37);
+            }
+            .Divider{
+                width: 100%;
+                margin-top: 24px;
+                margin-left: 0px;
+            }
+            .Sub-Heading{
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                color: rgb(51,51,51);
+                margin-left: 32px;
+                margin-top: 24px;
+                margin-right: 24px;
+            }
+            .TextFieldContainer{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 24px;
+            }
+            .TextFieldName{
+                margin-right: 24px;
+                font-size: 12px;
+                font-family: Arial,sans-serif;
+            }
+               
+        </style>
+    </head>
+    <body>
+        <div class="NavBar">
+            <div class="NavLink">
+                <a href="index.html">Google Search</a>
+            </div>
+        </div>
+        <div class="Title">
+            Advanced Search
+        </div>
+        <div class="Divider">
+            <hr>
+        </div>
+        <div class="Sub-Heading">
+            Find Pages With...
+        </div>
+        <div class="SearchSection">
+            <form action="https://www.google.com/search?">
+                <div class="TextFieldContainer">
+                    <div class="TextFieldName">
+                        All these words:
+                    </div>
+                    <input type="text" name="q"class="TextField">
+                </div>
+                <div class="TextFieldContainer">
+                    <div class="TextFieldName">
+                        This exact word or phrase:
+                    </div>
+                    <input type="text" name="q"class="TextField">
+                </div>
+                <div class="TextFieldContainer">
+                    <div class="TextFieldName">
+                        Any of these words:
+                    </div>
+                    <input type="text" name="q"class="TextField">
+                </div>
+                <div class="TextFieldContainer">
+                    <div class="TextFieldName">
+                        None of these words:
+                    </div>
+                    <input type="text" name="q"class="TextField">
+                </div>
+                <div class="OuterButtonContainer">
+                    <div class="ButtonContainer">
+                        <input type="submit" value="Advanced Search" class="Button">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
